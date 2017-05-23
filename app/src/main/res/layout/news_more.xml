@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="#e4e4e4"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/share_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp"
+        android:text="分享"
+        android:textColor="#333333"
+        android:textSize="17dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1" />
+
+    <TextView
+        android:id="@+id/cancel_attention_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp"
+        android:text="取消关注"
+        android:textColor="#333333"
+        android:textSize="17dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1" />
+
+    <TextView
+        android:id="@+id/help_top_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp"
+        android:text="帮他置顶"
+        android:textColor="#333333"
+        android:textSize="17dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1" />
+
+    <TextView
+        android:id="@+id/report_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp"
+        android:text="举报"
+        android:textColor="#333333"
+        android:textSize="17dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <TextView
+        android:id="@+id/cancel_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp"
+        android:text="取消"
+        android:textColor="#333333"
+        android:textSize="17dp" />
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/showerweima"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/hexiaoma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/erweima"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hexiaoma"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="请让商家APP扫描进行核销"
+            android:textColor="#555555"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/erweima"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/psw"
+        android:layout_width="match_parent"
+        android:layout_height="280dp">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="44dp"
+            android:background="@mipmap/spinnerbg"
+            android:scrollbars="none"
+            android:spinnerMode="dropdown" />
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/money"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/resdialog_editbg"
+                android:focusable="true"
+                android:hint="备注消费金额"
+                android:inputType="number"
+                android:paddingBottom="13.5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="13.5dp"
+                android:textColorHint="#999999"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:text="折后金额"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/money_psw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="0.00元"
+                android:textColor="@color/title_color"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear2"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="18dp">
+
+            <EditText
+                android:id="@+id/psd_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_weight="1"
+                android:background="@drawable/resdialog_editbg"
+                android:hint="商家输入核销密码"
+                android:inputType="text"
+                android:paddingBottom="13.5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="13.5dp"
+                android:textColorHint="#999999"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/frag_user_make"
+                android:layout_width="88dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="28dp"
+                android:background="@drawable/tvbg_resdialog"
+                android:gravity="center"
+                android:text="确认使用"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

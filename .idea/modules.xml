@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Horiztanl/Horiztanl.iml" filepath="$PROJECT_DIR$/Horiztanl/Horiztanl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OneSDK/OneSDK.iml" filepath="$PROJECT_DIR$/OneSDK/OneSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Papaquan.iml" filepath="$PROJECT_DIR$/Papaquan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/YunWangVideoSDK/YunWangVideoSDK.iml" filepath="$PROJECT_DIR$/YunWangVideoSDK/YunWangVideoSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appvideo/appvideo.iml" filepath="$PROJECT_DIR$/appvideo/appvideo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_sunshaobei2015/lib_sunshaobei2015.iml" filepath="$PROJECT_DIR$/lib_sunshaobei2015/lib_sunshaobei2015.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zxinglite/zxinglite.iml" filepath="$PROJECT_DIR$/zxinglite/zxinglite.iml" />
+    </modules>
+  </component>
+</project>

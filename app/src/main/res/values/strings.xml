@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">啪啪圈</string>
+
+    <string name="protocol"><u>啪啪圈服务协议</u></string>
+    <string name="bind_phone"><u>立即绑定</u></string>
+    <string name="ss"><u>#LOL2017周年庆#</u>分享图片</string>
+    <string name="level_explain">等级用户活跃和荣誉的见证，等级会随着用户在啪啪圈上的搜索和成长而之增长</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_select_picture">SelectPictureActivity</string>
+    <string name="dir_all_pictures">/所有图片</string>
+    <string name="complete">完成</string>
+    <string name="chose_at_most">最多选择</string>
+    <string name="sheet">张</string>
+
+    <string name="desc_shrinkup">收起</string>
+    <string name="desc_spread">全文</string>
+
+    <string name="picture">图片</string>
+    <string name="all_picture">所有图片</string>
+    <string name="demo_forward">转发</string>
+    <string name="demo_delete">删除消息</string>
+    <string name="demo_copy">复制</string>
+    <string name="cancel">取消</string>
+    <string name="_1_2_3_1">一. 原则 1、为维护啪啪圈平台健康生态秩序，更好地保障用户合法权益及良好的用户体验，厦门啪啪圈科技有限公司（以下简称“啪啪圈科技”）根据现行法律法规及《啪啪圈用户协议》，制定《啪啪圈平台行为规范》。 2、啪啪圈用户在啪啪圈平台的活动须遵守现行法律法规。啪啪圈科技将按照相关法律法规及用户协议规则，对违规行为进行相应的处理。 3、若你对本规范的理解和执行有任何疑惑或争议，可告知我们，我们将根据有关规则予以解释或处理。 二、使用规范 （一）聊天及资料内容行为规范 （1）发布色情及色情擦边内容的行为。 •散布淫秽、色情内容，包括但不限于招嫖、约炮等内容。 •发布带有色情暗示、挑逗性的音频、文字、动图、外部网站链接和二维码等内容的。</string>
+    <string name="_3_4_5_logo">（3）威胁、污蔑诽谤以及辱骂他人的行为。 （4）盗用他人资料的行为。包括但不限于以下盗用行为： •擅自发布、使用他人已经登记注册的企业名称或商标，侵犯他人企业名称专用权及商标专用权。 •擅自发布、使用他人名称、照片、身份证号码，侵害他人名誉权、肖像权等合法权利。 （5）冒充啪啪圈官方帐号的行为： •发布、使用、恶搞啪啪圈LOGO等已有知识产权内容相同、相似的字样，或者容易与目前已有啪啪圈产品设计主题、外观等相混淆的内容。 •恶意中伤、侮辱、调侃啪啪圈科技以及相关产品和技术。</string>
+
+</resources>

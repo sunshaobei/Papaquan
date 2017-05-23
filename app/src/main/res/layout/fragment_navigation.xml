@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent"
+    tools:context="xm.ppq.papaquan.View.Life.lifehome.NavigationFragment">
+
+    <com.example.lib_sunshaobei2017.widget.GridView4ScrollView
+        android:layout_width="match_parent"
+        android:numColumns="5"
+        android:focusable="false"
+        android:listSelector="@color/white"
+        android:scrollbars="none"
+        android:id="@+id/gridview"
+        android:layout_height="150dp"/>
+
+</FrameLayout>

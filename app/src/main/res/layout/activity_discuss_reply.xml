@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_color"
+        android:orientation="horizontal"
+        android:visibility="gone"></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/title_color"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/discuss_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/white_finish"
+            android:gravity="center"
+            android:drawablePadding="3dp"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_15" />
+
+        <LinearLayout
+            android:id="@+id/lineartop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/discuss_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/linearbg_titleleft_true"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:paddingRight="20dp"
+                android:text="评论"
+                android:textColor="@color/title_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:background="@drawable/linearbg_titleright_false"
+                android:id="@+id/reply_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:paddingLeft="20dp"
+                android:textColor="@color/white"
+                android:paddingRight="20dp"
+                android:text="回复"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <xm.ppq.papaquan.Tool.customview.Indicator
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_3"
+            android:layout_alignLeft="@+id/lineartop"
+            android:layout_alignRight="@+id/lineartop"
+            android:layout_below="@+id/lineartop"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="-5dp"
+            android:background="#00000000" />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/discuss_reply_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="xm.ppq.papaquan">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <application xmlns:tools="http://schemas.android.com/tools"
+        android:name=".View.MyApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:replace="android:name">
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58f45d648630f55405001337" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="papaquan" />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105593601" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="TencentMapSDK"
+            android:value="I2FBZ-P7LKJ-GP2FN-F5ZUI-SJGLZ-Y7BH7" />
+
+        <activity
+            android:name=".View.main.home.HomePageActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".View.Life.Canvass_Business"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.SplashActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.main.MainActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".webview_protocol.WebView_ProtocolActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.take_notes.Take_AgioActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.login.LoginActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.register.RegisterActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.retrieve.RetrieveActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.reevesetup.ReeveSetUpActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.ranksuggest.RankSuggestActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.tasheet.Ta_SheetActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.seletop.SelectTopicActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.mineaddress.MineAddressActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.make_address.Make_AddressActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.topic_deail.Topic_DetailActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.follower_follow.Follower_FollowActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.news_mine_money.Mine_MoneyActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.discuss_reply.Discuss_ReplyActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.pic.PictureActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ActivityTheme_Translucent" />
+        <activity
+            android:name=".View.kidney_sign.KidneySignActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.trendtopicdetail.TrendTopicDetailActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustUnspecified" />
+        <activity
+            android:name=".View.bindphone.BindPhoneActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.setup.SetUpActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.city_search.CitySearchActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/ActivityTheme_Light" />
+        <activity
+            android:name=".View.search.SearchActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.selectpic_activity.SelectPictureActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.chat.ChatActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.my_topic.MyTopicActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.perinfo.PerInfoActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.accusation.AccusationActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.mine_balance.Mine_BalanceActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.balance_detail.ExchangeHistoryActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.mine_integral.Mine_IntegralActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.withdraw_cash.Withdraw_CashActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.review_details.Review_detailsActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Tool.IMinit.SelectContactToSendCardActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Tool.IMinit.ContactSettingActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Tool.takevideo.WidthMatchVideo"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Tool.takevideo.YWRecordVideoActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.published_dynamic.Dynamic"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Tool.A_reward_Dialog"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.revise_password.RevisePassWordActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.news_warn.NewsWarnActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.about.AboutActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.conceal.ConcealActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.redcard.RedCardActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".View.purchase_red.PurchaseRedActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.signed.SignedActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.owncoin.Exchange"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.scare_buying.Scare_buyingActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.mine_choice.Mine_ChoiceActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.owncoin.ExchangeDetailActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.place_order.Place_OrderActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.order_pay.Order_PayActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.waiting.WaitingActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.productdetail.ProductDetailActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.goodscommet.GoodsCommentActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.applyrefunds.ApplyRefundActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.appraise.AppraiseActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.mine_tenant.TenantActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.merchant.MerchantActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.merchant_homepage.Merchant_HomepageActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.verification.VerificationActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.take_notes.Take_notesActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.vipmanage.VipManageActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.selleroof.SellerOofActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.classification.ClassificationActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.redcardfive.ReCardFiveActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.discountNchoose.DiscountAndChooseActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.tenant_abstract.Tenant_AbstractActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.scare_manage.Scare_ManageActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.agio_manage.AgioManageActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.cancel_pass_word.CancelPassWordActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.account_setting.AccountSettingActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.restaurant.RestaurantActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.mer_info.MerInfoActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.staff_manage.StaffManageActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.allsortofseller.AllSortOfSellerActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.judge_of.JudgeOfActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.quick_audit.Quick_AuditActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.upbusinesslicence.UpBusinessLicenceActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.upbusinesslicence.SpaceImageDetailActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.forsuresellerlocation.ForSureSellerLocationActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.upsellerimage.UpSellerImageActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.othersetting.OtherSettingActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.sellerlogin.SellerLoginActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.sellerregist.SellerRegistActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.scare_past.Scare_PastActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.panic_buying.Panic_BuyingActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.alltopic.AlltopicActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.panic_pay_waiting.Panic_Pay_WaitingActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.enter.EnterActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.richedit.RichEditActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".qr_code.WeChatCaptureActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.balance.BalanceActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.invite_friend.Invite_FriendActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.lifehome.searchfragment.SearchGoodsActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <meta-data
+            android:name="com.alibaba.app.appkey"
+            android:value="23845260" />
+        <meta-data
+            android:name="com.alibaba.app.appsecret"
+            android:value="b60bef82e40a823ed39e23ad08682e27" />
+
+        <!-- 消息接收服务 -->
+        <service
+            android:name="com.alibaba.sdk.android.push.MsgService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.alibaba.sdk.android.push.NOTIFY_ACTION" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.alibaba.sdk.android.push.channel.CheckService"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="com.alibaba.sdk.android.push.CHECK_SERVICE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.taobao.accs.ChannelService"
+            android:exported="true"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.SERVICE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.taobao.accs.ChannelService$KernelService"
+            android:exported="false"
+            android:process=":channel" />
+        <service
+            android:name="com.taobao.accs.data.MsgDistributeService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.taobao.accs.EventReceiver"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.taobao.accs.ServiceReceiver"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.START_FROM_AGOO" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="org.android.agoo.accs.AgooService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.alibaba.sdk.android.push.AliyunPushIntentService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.taobao.agoo.AgooCommondReceiver"
+            android:exported="true"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="${applicationId}.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.alibaba.sdk.android.push.channel.TaobaoRecvService"
+            android:exported="true"
+            android:process=":channel">
+            <intent-filter>
+                <action android:name="org.android.agoo.client.MessageReceiverService" />
+            </intent-filter>
+        </service>
+
+        <!-- 消息接收监听器 （用户可自主扩展） -->
+        <receiver
+            android:name=".life.Tool.TuiSongService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_OPENED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_REMOVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.taobao.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.sdk.android.push.RECEIVE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".View.Life.shop_lodge.ShopLodgeActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".View.Life.tecenguide.TenCentGuideActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".Tool.IMinit.ContackListActivity"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_owncoin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xm.ppq.papaquan.View.owncoin.OwnCoinActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@mipmap/bananer_1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/image"
+                android:background="#50000000"
+                android:paddingBottom="16px"
+                android:paddingLeft="30px"
+                android:paddingTop="16px"
+                android:text="todo"
+                android:textColor="@color/white"
+                android:textSize="22px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/title_color">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24px"
+                android:layout_marginTop="50px"
+                android:paddingBottom="3dp"
+                android:text="金币"
+                android:textColor="@color/white"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/text1"
+                android:layout_marginLeft="12px"
+                android:layout_toRightOf="@+id/text1"
+                android:text="5000"
+                android:textColor="@color/white"
+                android:textSize="46px" />
+
+            <RelativeLayout
+                android:id="@+id/text3"
+                android:layout_marginLeft="12px"
+                android:layout_alignTop="@+id/text2"
+                android:layout_toRightOf="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:id="@+id/text4"
+                    android:text="36.99元"
+                    android:textColor="@color/white"
+                    android:textSize="22px" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_alignLeft="@+id/text4"
+                    android:layout_alignRight="@+id/text4"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:layout_height="@dimen/dp_0.5"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text3"
+                android:layout_below="@+id/text3"
+                android:layout_marginTop="2dp"
+                android:text="693221人关注"
+                android:textColor="@color/white"
+                android:textSize="22px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="26px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="18px"
+                android:paddingBottom="18px"
+                android:paddingRight="16px"
+                android:paddingLeft="16px"
+                android:background="@drawable/tvbg_coin66000000"
+                android:layout_marginRight="30px"
+                android:text="金币不足"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#F2F2F2"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="18px"
+                android:layout_marginBottom="18px"
+                android:layout_marginLeft="29px"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/text5"
+                android:text="剩余: "
+                android:textSize="26px"
+                android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="24156"
+                    android:textSize="26px"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="份"
+                    android:textSize="26px"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="30px"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="501541"
+                    android:textSize="26px"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="26px"
+                    android:text="人已兑换"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/title_color"
+            android:textSize="28px"
+            android:layout_marginLeft="30px"
+            android:text="规则说明"
+            android:layout_marginTop="22px"
+            android:layout_marginBottom="22px"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@mipmap/rule"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="商品简介"
+            android:textColor="@color/title_color"
+            android:textSize="28px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="22px"
+            android:layout_marginBottom="16px"
+            android:layout_height="wrap_content" />
+
+        <com.example.lib_sunshaobei2017.widget.ListView4ScrollView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.example.lib_sunshaobei2017.widget.ListView4ScrollView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#3A3A3A"
+            android:textSize="26px"
+            android:text="sdgsdafgasd"
+            android:paddingTop="14px"
+            android:paddingRight="30px"
+            android:paddingBottom="20dp"
+            android:paddingLeft="30px"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#00000000">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/back_circle" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/home_cicel" />
+    </RelativeLayout>
+
+</FrameLayout>

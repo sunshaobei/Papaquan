@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Red"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/papa_fragment_bar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Red"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#fff">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbarlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                app:elevation="0dp">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/collapsin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    app:expandedTitleMarginEnd="0dp"
+                    app:expandedTitleMarginStart="0dp"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed|snap|enterAlways|enterAlwaysCollapsed">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@color/Red"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/address_place"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|left"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="5dp"
+                                android:paddingTop="10dp"
+                                android:src="@drawable/place" />
+
+                            <TextView
+                                android:id="@+id/location"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|left"
+                                android:layout_marginLeft="35dp"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="10dp"
+                                android:text="位置"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/papa_logo" />
+
+                            <ImageView
+                                android:id="@+id/select_papa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:paddingBottom="15dp"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingTop="10dp"
+                                android:src="@drawable/select_add" />
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:paddingLeft="15dp">
+
+                            <RelativeLayout
+                                android:id="@+id/topic1"
+                                android:layout_width="match_parent"
+                                android:layout_height="62dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/headicon1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="62dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/topic_item"
+                                    android:scaleType="fitXY" />
+
+                                <TextView
+                                    android:id="@+id/topic1title"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignBottom="@+id/headicon1"
+                                    android:layout_alignLeft="@+id/headicon1"
+                                    android:layout_alignRight="@+id/headicon1"
+                                    android:layout_alignTop="@+id/headicon1"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/tvbg_corner4color40000000"
+                                    android:ellipsize="end"
+                                    android:gravity="center"
+                                    android:maxLines="2"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/topic2"
+                                android:layout_width="match_parent"
+                                android:layout_height="62dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/headicon2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="62dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/topic_item"
+                                    android:scaleType="fitXY" />
+
+                                <TextView
+                                    android:id="@+id/topic2title"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignBottom="@+id/headicon2"
+                                    android:layout_alignLeft="@+id/headicon2"
+                                    android:layout_alignRight="@+id/headicon2"
+                                    android:layout_alignTop="@+id/headicon2"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/tvbg_corner4color40000000"
+                                    android:ellipsize="end"
+                                    android:gravity="center"
+                                    android:maxLines="2"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="62dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/headicon3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="62dp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/topic_item"
+                                    android:scaleType="fitXY" />
+
+                                <TextView
+                                    android:id="@+id/moretopic"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignBottom="@+id/headicon3"
+                                    android:layout_alignLeft="@+id/headicon3"
+                                    android:layout_alignRight="@+id/headicon3"
+                                    android:layout_alignTop="@+id/headicon3"
+                                    android:layout_centerInParent="true"
+                                    android:background="@drawable/tvbg_corner4color40000000"
+                                    android:ellipsize="end"
+                                    android:gravity="center"
+                                    android:maxLines="2"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:text="#更多话题#"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:background="#f9f9f9" />
+
+                    </LinearLayout>
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <com.example.lib_sunshaobei2017.widget.pagerslidingtabstrip.PagerSlidingTabStrip
+                        android:id="@+id/tab_strip"
+                        android:layout_width="240dp"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/white"
+                        app:pstsDividerColor="@android:color/transparent"
+                        app:pstsIndicatorColor="@android:color/transparent"
+                        app:pstsIndicatorHeight="0dp"
+                        app:pstsShouldExpand="true"
+                        app:pstsTextSelectedColor="@color/Red"
+                        app:pstsUnderlineColor="#00000000"
+                        app:pstsUnderlineHeight="0dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_0.5"
+                            android:layout_alignParentBottom="true"
+                            android:background="#e4e4e4" />
+
+                        <xm.ppq.papaquan.Tool.customview.Indicator
+                            android:id="@+id/indicator"
+                            android:layout_width="240dp"
+                            android:layout_height="3dp"
+                            android:layout_centerHorizontal="true" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/papa_three_page"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <include
+            android:id="@+id/searchview"
+            layout="@layout/item_searchtopic_popupwindow"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

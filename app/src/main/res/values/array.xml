@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="language">
+        <item>全部评价\t\t</item>
+        <item>精选评价\t\t</item>
+        <item>抢购评价\t\t</item>
+        <item>折扣评价\t\t</item>
+    </string-array>
+
+    <string-array name="more">
+        <item>全部美食</item>
+        <item>石狮市</item>
+        <item>附近优先</item>
+        <item>筛选</item>
+    </string-array>
+</resources>

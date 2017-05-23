@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Red"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/public_title_2" />
+
+        <EditText
+            android:maxLength="12"
+            android:id="@+id/make_pass_word_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_red_card"
+            android:hint="请输入新密码"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingBottom="12dp"
+            android:paddingLeft="41dp"
+            android:paddingRight="41dp"
+            android:paddingTop="12dp"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/now_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:onClick="MakePassWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginRight="65dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/pass_make"
+            android:gravity="center"
+            android:paddingBottom="11dp"
+            android:paddingTop="11dp"
+            android:text="确认修改"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f9f9f9"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="14dp"
+            android:text="说明:核销密码主要用于在用户手机端输入核销使用的密码，此密码只做核销使用"
+            android:textColor="@color/Red"
+            android:textSize="13dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+
+    <com.example.zhaoshuang.weixinrecordeddemo.MyVideoView
+        android:id="@+id/vv_play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+    <!--<include
+        layout="@layout/include_player"/>-->
+
+
+    <ImageView
+        android:id="@+id/sure"
+        android:layout_width="60dp"
+        android:src="@mipmap/sure"
+        android:background="@drawable/rotia"
+        android:layout_marginRight="10dp"
+        android:padding="15dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="10dp"
+        android:layout_height="60dp" />
+
+
+</FrameLayout>

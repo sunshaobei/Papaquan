@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="70dp"
+        android:layout_height="65dp"
+        android:src="@drawable/test" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="3dp"
+        android:minLines="2"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:text="照强鸭肉海鲜排挡(厦门大学)"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+</LinearLayout>

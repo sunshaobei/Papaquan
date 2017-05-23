@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/criticism_lin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <!--<ImageView
+        android:id="@+id/source_criticism"
+        android:layout_width="wrap_content"
+        android:paddingTop="4dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:src="@drawable/news_discuss"/>-->
+
+    <TextView
+        android:id="@+id/host_criticism"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginLeft="3dp"
+        android:gravity="center_vertical"
+        android:textColor="#5b6a91"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/content_criticism"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:paddingRight="5dp"
+        android:textSize="13sp" />
+
+</LinearLayout>

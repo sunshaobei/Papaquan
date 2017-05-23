@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Red"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f9f9f9"
+        android:orientation="vertical">
+
+        <include layout="@layout/public_title_2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Red"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tenant_home_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="8dp"
+                android:drawableTop="@mipmap/tenan_home"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="19dp"
+                android:text="商户主页"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/verification_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="8dp"
+                android:drawableTop="@mipmap/cancel_code"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="19dp"
+                android:text="核销验证"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/vip_manage_all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="5dp"
+                            android:drawableTop="@mipmap/vip_manage"
+                            android:gravity="center_horizontal"
+                            android:padding="20dp"
+                            android:text="会员管理"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+
+                        <View
+                            android:layout_width="@dimen/dp_0.5"
+                            android:layout_height="match_parent"
+                            android:background="#e4e4e4" />
+
+                        <TextView
+                            android:id="@+id/scare_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="5dp"
+                            android:drawableTop="@mipmap/scare_manage"
+                            android:gravity="center_horizontal"
+                            android:padding="20dp"
+                            android:text="抢购管理"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+
+                        <View
+                            android:layout_width="@dimen/dp_0.5"
+                            android:layout_height="match_parent"
+                            android:background="#e4e4e4" />
+
+                        <TextView
+                            android:id="@+id/agio_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="5dp"
+                            android:drawableTop="@mipmap/agio_manage"
+                            android:gravity="center_horizontal"
+                            android:padding="20dp"
+                            android:text="折扣管理"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+
+                        <View
+                            android:layout_width="@dimen/dp_0.5"
+                            android:layout_height="match_parent"
+                            android:background="#e4e4e4" />
+
+                        <TextView
+                            android:id="@+id/choice_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="5dp"
+                            android:drawableTop="@mipmap/choice_shopping"
+                            android:gravity="center_horizontal"
+                            android:padding="20dp"
+                            android:text="精选商品"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_0.5"
+                        android:background="#e4e4e4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/judge_manage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="5dp"
+                            android:drawableTop="@mipmap/judge_of_manage"
+                            android:gravity="center_horizontal"
+                            android:padding="20dp"
+                            android:text="评价管理"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:id="@+id/masterview1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="@dimen/dp_0.5"
+                                android:layout_height="match_parent"
+                                android:background="#e4e4e4" />
+
+                            <TextView
+                                android:id="@+id/staff_manage_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="5dp"
+                                android:drawableTop="@mipmap/staff_data"
+                                android:gravity="center_horizontal"
+                                android:padding="20dp"
+                                android:text="员工管理"
+                                android:textColor="#333333"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="@dimen/dp_0.5"
+                            android:layout_height="match_parent"
+                            android:background="#e4e4e4" />
+
+                        <TextView
+                            android:id="@+id/mer_info_lin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="5dp"
+                            android:drawableTop="@mipmap/tenan_data"
+                            android:gravity="center_horizontal"
+                            android:padding="20dp"
+                            android:text="商户信息"
+                            android:textColor="#333333"
+                            android:textSize="12sp" />
+
+                        <View
+                            android:layout_width="@dimen/dp_0.5"
+                            android:layout_height="match_parent"
+                            android:background="#e4e4e4" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="20dp"
+                            android:text="商户信息"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/masterview3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="20dp"
+                            android:text="商户信息"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/masterview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#f2f2f2">
+
+                        <LinearLayout
+                            android:id="@+id/quick_lin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/auditing_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="当前店铺尚未审核，无法正常显示"
+                                android:textColor="#ff6666"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/auditing_key"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="10dp"
+                                android:drawableRight="@drawable/point_right"
+                                android:text="快速审核"
+                                android:textColor="#ff6666"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_5" />
+
+                    <LinearLayout
+                        android:id="@+id/lin_jianjie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="商户简介"
+                            android:textColor="#010101"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="5dp"
+                            android:drawableRight="@drawable/point_right"
+                            android:text="修改"
+                            android:textColor="#010101"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_0.5"
+                        android:background="#e4e4e4" />
+
+                    <LinearLayout
+                        android:id="@+id/pass_word_lin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="核销密码"
+                            android:textColor="#010101"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="5dp"
+                            android:drawableRight="@drawable/point_right"
+                            android:text="修改"
+                            android:textColor="#010101"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_0.5"
+                        android:background="#e4e4e4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="15dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="帮助中心"
+                            android:textColor="#010101"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="5dp"
+                            android:drawableRight="@drawable/point_right"
+                            android:text="有问题找我!"
+                            android:textColor="#999999"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_0.5"
+                        android:background="#e4e4e4" />
+
+                    <LinearLayout
+                        android:id="@+id/account_lin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="15dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="退出登录"
+                            android:textColor="#010101"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="5dp"
+                            android:drawableRight="@drawable/point_right"
+                            android:text=""
+                            android:textColor="#999999"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_0.5"
+                        android:background="#e4e4e4" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="15dp"
+                    android:text="商务服务电话：0755-36520587"
+                    android:textColor="#999999"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

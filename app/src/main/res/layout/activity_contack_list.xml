@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_contack_list"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="xm.ppq.papaquan.Tool.IMinit.ContackListActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/bar"
+        android:background="@color/title_color"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_height="1dp"></LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="转发给"
+        android:background="@color/title_color"
+        android:layout_height="48dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <EditText
+            android:id="@+id/search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_10"
+            android:background="@drawable/search_edit"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:padding="@dimen/dp_5"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/edit_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/search_touch"
+            android:text="搜索联系人"
+            android:textColor="#ababab" />
+
+    </FrameLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listview"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>

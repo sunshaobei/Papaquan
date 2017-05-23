@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:lineSpacingExtra="5dp"
+            android:text="啪啪圈平台行为规范："
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/_1_2_3_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:text="违反以上行为的，将禁用帐号的部分功能，限制与其他人的互动注。屡犯者，视情节轻重，可能冻结帐号，不能再使用啪啪圈。
+（注：与陌生人交流的功能包括但不限于：给陌生人打招呼，评论陌生人的动态，创建、加入群组，禁止发言、禁止打招呼、禁止评论他人留言、禁止使用话题、禁止加入聊天室、禁止加入和创建群组等限制部分使用功能的处罚，情节特别严重的还将受到帐号封禁直至注销的处罚。）"
+            android:textColor="@color/Red" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:text="（2）在平台上发布任何广告相关信息的行为。例如：微商、招聘、信用卡、贷款、化妆品、数码产品、淘宝店铺、整容整形等广告。" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:text="违反以上行为的，将删除资料广告信息。屡犯者，视情节轻重，禁用帐号的部分功能。"
+            android:textColor="@color/Red" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/_3_4_5_logo" />
+
+    </LinearLayout>
+
+</ScrollView>

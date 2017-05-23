@@ -1,0 +1,20 @@
+<layout>
+    <data>
+        <variable
+            name="path"
+            type="xm.ppq.papaquan.View.Life.lifehome.data.LifeHomeData.Image"/>
+    </data>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xm.ppq.papaquan.View.Life.lifehome.data.bannerLayout">
+
+    <ImageView
+        android:src="@mipmap/bananer_1"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent" />
+</FrameLayout>
+</layout>
